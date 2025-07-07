@@ -10,7 +10,7 @@ sequenceDiagram
     server->>browser: HTTP Status code: 302 (URL redirect)
     deactivate server
     
-    Note right of server: The server creates a new note object and adds it to the array "notes." <br/> Then, the server asks the browser to perform a URL redirect to the location defined on the header ("/notes").
+    Note right of server: The server creates a new note object and adds it to the array "notes." <br/> Then, the server asks the browser to perform a URL redirect to the addresss defined in the header's location ("/notes").
 
     browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
