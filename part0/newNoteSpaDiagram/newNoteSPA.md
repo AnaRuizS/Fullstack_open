@@ -17,7 +17,7 @@ sequenceDiagram
 
     Note right of browser: The browser sends a post request to the server with the user input in JSON format. 
 
-    server->>browser: Status code 201: Resource created
+    server-->>browser: Status code 201: Resource created
     deactivate server
 
     Note right of server: The server adds the new note to the JSON file.
